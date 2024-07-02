@@ -1,0 +1,193 @@
+@charset "UTF-8";
+
+/* ページ全体のスタイル
+----------------------------------------- */
+
+
+body {
+    color: #333;
+    font-weight: 700;
+    line-height: 1.75;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+li {
+    list-style: none;
+}
+
+/* 共通
+------------------------------------------ */
+
+
+/* Header
+------------------------------------------ */
+
+.header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  height: 70px;
+  justify-content: space-between;
+  z-index: 10;
+  background-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .header {
+      height: 100px;
+      width: 100%;
+      justify-content: center;
+  }
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+}
+
+@media (min-width: 768px) {
+  .header__inner {
+      display: flex;
+      height: 100px;
+      width: 100vw;
+      max-width: 1200px;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+  }
+}
+
+.header__logo {
+  display: flex;
+  width: 166px;
+  margin-left: 16px;
+}
+
+@media (min-width: 768px) {
+  .header__logo {
+      margin-left: unset;
+      width: 212px;
+  }
+}
+
+@media (min-width: 960px) {
+  .header__logo {
+      margin-left: unset;
+      width: 242px;
+  }
+}
+
+.header__link {
+  color: #005BAC;
+  font-family: Poppins;
+  font-size: 22px;
+}
+
+@media (min-width: 768px) {
+  .header__link {
+      font-size: 28px;
+  }
+}
+
+@media (min-width: 960px) {
+  .header__link {
+      font-size: 32px;
+  }
+}
+
+/* ハンバーガーメニュー */
+.header__menuBtn {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: #005BAC;
+  width: 70px;
+  height: 70px;
+  padding: 20px;
+}
+
+.header__menuIcon {
+  width: 30px;
+  height: 26.25px;
+}
+
+@media (min-width: 768px) {
+  .header__menuBtn {
+      display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__hamburgerMenu {
+      position: fixed;
+      top: 70px;
+      width: 100%;
+      background-color: #005BAC;
+      transition: opacity 0.3s linear;
+      opacity: 0;
+      visibility: hidden;
+  }
+}
+
+@media (min-width: 768px) {
+  .header__nav {
+      display: flex;
+      width: calc(100% - 212px);
+      justify-content: right;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__hamburgerMenu--active {
+      opacity: 1;
+      visibility: visible;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__hamburgerMenuList {
+      display: table;
+      width: 100vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .header__navList {
+      display: flex;
+      align-items: center;
+      width: calc(100% - 220px);
+      justify-content: space-evenly;
+      padding-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__hamburgerMenuItem {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 20px;
+      padding: 17px 0;
+      font-size: 18px;
+      font-weight: 500;
+      color: #fff;
+  }
+}
+
+@media (min-width: 768px) {
+  .header__navItem {
+      font-size: 16px;
+      font-weight: 500;
+  }
+}
