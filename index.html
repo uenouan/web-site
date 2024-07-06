@@ -45,20 +45,109 @@
         </h1>
 
         <div class="header__menuBtn">
-          <img src="assets/image/common/header_menu_button_01.png" alt="" class="header__menuIcon">
+          <img src="assets/image/header/header_menu_button_01.png" alt="" class="header__menuIcon">
         </div>
 
         <!-- ナビゲーション、ヘッダーメニュー -->
         <nav class="header__hamburgerMenu header__nav">
           <ul class="header__hamburgerMenuList header__navList">
-            <li><a href="#" class="header__hamburgerMenuItem header__navItem">トップ</a></li>
+            <li><a href="./" class="header__hamburgerMenuItem header__navItem--hidden">トップ</a></li>
             <li><a href="./price/" class="header__hamburgerMenuItem header__navItem">価格・スペック</a></li>
             <li><a href="./faq/" class="header__hamburgerMenuItem header__navItem">よくあるご質問</a></li>
           </ul>
         </nav>
       </div>
     </header>
+    <div class="cover">
+      <div class="cover__heading">
+        <p class="cover__headingTitle">
+          持続可能な農業を目指す
+        </p>
+        <p class="cover__headingDescription">
+          キラメキファームは革新的デザインの農業機器で未来の農業を実現。
+          ビッグデータ・自動運転ロボット・リジェネラティブ農業で環境に優しい効率化を目指す。
+        </p>
+      </div>
+      <picture class="cover__imageWrap">
+        <source media="(min-width: 768px)" srcset="assets/image/top/cover/cover_pc_01.png">
+        <img src="assets/image/top/cover/cover_sp_01.png" alt="" class="cover__image">
+      </picture>
+    </div>
 
+    <section class="about">
+      <h2>
+        <div class="section__heading">
+          <div class="section__headingEn">
+            About Us
+          </div>
+          <div class="section__headingJa">
+            私たちについて
+          </div>
+        </div>
+      </h2>
+      <div class="about__container">
+        <picture class="about__imageWrap">
+          <source media="(min-width: 768px)" srcset="assets/image/top/about/aboutus_pc_01.png">
+          <img src="assets/image/top/about/aboutus_sp_01.png" alt="" class="about__image">
+        </picture>
+        <div class="about__description">
+          <p class="about__descriptionLarge">
+            キラメキファームは、これからの農業を次世代の子どもたちに残すために<br>
+            創設されたイノベーションカンパニーです。
+          </p>
+          <p class="about__descriptionSmall">
+            キラメキファームは革新的デザインと最新技術を活用した農業機器メーカーです。
+            未来の農業を実現するために、ビッグデータを駆使して省エネルギー・効率化を実現し、
+            自動運転技術を搭載したロボットで一年中稼働することができる機器を提供します。
+            リジェネラティブ農業を実現する技術を用いて、持続可能な農業システムをサポートします。
+            私たちの社是は、次世代の子供たちに豊かな地球環境を残すこと。
+            イノベーションを起こすことで農業に新たな価値を生み出し、地球環境保全に貢献することを目指しています。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature">
+      <h2>
+        <div class="section__heading">
+          <div class="section__headingEn">
+            Features
+          </div>
+          <div class="section__headingJa">
+            私たちが選ばれる3つの理由
+          </div>
+        </div>
+      </h2>
+      <div class="feature__container">
+        <div class="feature__item">
+          <picture class="feature__itemImageWrap">
+            <source media="(min-width: 768px)" srcset="assets/image/top/features/feature_pc_01.png">
+            <img src="assets/image/top/features/feature_sp_01.png" alt="" class="feature__itemImage">
+          </picture>
+          <p class="feature__itemDescription">
+            農業の未来と革新的デザイン性で最新鋭の機能を完備
+          </p>
+        </div>
+        <div class="feature__item">
+          <picture class="feature__itemImageWrap">
+            <source media="(min-width: 768px)" srcset="assets/image/top/features/feature_pc_02.png">
+            <img src="assets/image/top/features/feature_sp_02.png" alt="" class="feature__itemImage">
+          </picture>
+          <p class="feature__itemDescription">
+            ビッグデータを駆使して、省電力・効率化を実現
+          </p>
+        </div>
+        <div class="feature__item">
+          <picture class="feature__itemImageWrap">
+            <source media="(min-width: 768px)" srcset="assets/image/top/features/feature_pc_03.png">
+            <img src="assets/image/top/features/feature_sp_03.png" alt="" class="feature__itemImage">
+          </picture>
+          <p class="feature__itemDescription">
+            自動運転技術を搭載したロボットで一年中稼働することができる
+          </p>
+        </div>
+      </div>
+    </section>
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
