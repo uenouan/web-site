@@ -276,6 +276,76 @@ li {
   border-right: 2px solid #fff;
 }
 
+
+/* Sub page - Cover
+------------------------------------------ */
+
+.sub-cover {
+  width: 91.8%;
+  margin: 0 auto;
+  padding: 20px 0 40px 0;
+}
+
+@media (min-width: 768px) {
+  .sub-cover {
+    width: 100%;
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 768px) {
+  .sub-cover__inner {
+    position: relative;
+  }
+}
+
+.sub-cover__image {
+  width: 100%;
+}
+
+.sub-cover__title {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 32px 0;
+}
+
+@media (min-width: 768px) {
+  .sub-cover__title {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 113px;
+    width: 327px;
+    background-color: #fff;
+    border-radius: 0 40px 0 0;
+    margin: 0 0 -1px -1px;
+    bottom: 0;
+  }
+}
+
+.sub-cover__nav {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+@media (min-width: 768px) {
+  .sub-cover__nav {
+    margin: 24px 0 32px 0;
+  }
+}
+
+.sub-cover__navItem {
+  font-size: 12px;
+}
+
+.sub-cover__navArrow {
+  height: 10px;
+  margin: 0 8px;
+}
+
+
 /* Price Spec - Section Title
 ------------------------------------------ */
 
@@ -817,80 +887,13 @@ Top
 Price
 ------------------------------------------ */
 
-/* Cover
------------------------------------------- */
-
-.price-cover {
-  width: 91.8%;
-  margin: 0 auto;
-  padding: 20px 0 40px 0;
-}
-
-@media (min-width: 768px) {
-  .price-cover {
-    width: 100%;
-    max-width: 1200px;
-  }
-}
-
-@media (min-width: 768px) {
-  .price-cover__inner {
-    position: relative;
-  }
-}
-
-.price-cover__image {
-  width: 100%;
-}
-
-.price-cover__title {
-  font-size: 30px;
-  font-weight: 700;
-  margin: 32px 0;
-}
-
-@media (min-width: 768px) {
-  .price-cover__title {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 113px;
-    width: 327px;
-    background-color: #fff;
-    border-radius: 0 40px 0 0;
-    margin: 0 0 -1px -1px;
-    bottom: 0;
-  }
-}
-
-.price-cover__nav {
-  display: flex;
-  align-items: center;
-  justify-content: right;
-}
-
-@media (min-width: 768px) {
-  .price-cover__nav {
-    margin: 24px 0 32px 0;
-  }
-}
-
-.price-cover__navItem {
-  font-size: 12px;
-}
-
-.price-cover__navArrow {
-  height: 10px;
-  margin: 0 8px;
-}
-
 /* Gallery
 ------------------------------------------ */
 
 .price-gallery {
   width: 91.8%;
   margin: 0 auto;
+  padding-bottom: 34px;
 }
 
 @media (min-width: 768px) {
@@ -898,8 +901,59 @@ Price
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
-    padding-bottom: 64px;
   }
+}
+
+.price-gallery__slickItem {
+  /* width: 100%; */
+}
+
+.price-gallery__image {
+  width: 100%;
+  border-radius: 24px;
+}
+
+.slick-dots {
+  bottom: 10px;
+  display: flex;
+  column-gap: 6px;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .slick-dots {
+    bottom: 22px;
+  }
+}
+
+.slick-dots li {
+  width: 8px;
+  height: 8px;
+  margin: 0;
+}
+
+.slick-dots li button {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #eee;
+  cursor: pointer;
+  padding: 0;
+}
+
+.slick-dots li button::before {
+  width: 8px;
+  height: 8px;
+  line-height: normal;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.slick-dots li button:hover::before,
+.slick-dots li.slick-active button::before {
+  color: #168352;
+  background-color: #168352;
+  opacity: 1;
 }
 
 /* Feature
@@ -1000,6 +1054,7 @@ Price
 .price-spec {
   width: 91.8%;
   margin: 0 auto;
+  padding-bottom: 64px;
 }
 
 @media (min-width: 768px) {
@@ -1007,7 +1062,6 @@ Price
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
-    padding-bottom: 64px;
   }
 }
 
@@ -1059,4 +1113,195 @@ Price
     display: table-cell;
     height: 64px;
   }
+}
+
+.price-contact {
+  width: 100%;
+  position: relative;
+}
+
+.price-contact__image {
+  width: 100%;
+}
+
+.price-contact__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 358px;
+  height: 80px;
+  border: solid 2px #fff;
+  border-radius: 40px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+}
+
+/* ------------------------------------------
+FAQ
+------------------------------------------ */
+
+/* FAQ
+------------------------------------------ */
+
+.faq-faq {
+  width: 91.8%;
+  margin: 0 auto;
+  padding-bottom: 64px;
+}
+
+@media (min-width: 768px) {
+  .faq-faq {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+.faq-faq__group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .faq-faq__group {
+  }
+}
+
+.faq-faq__item {
+  width: 100%;
+  border: solid 1px #cccccc;
+  border-radius: 16px;
+}
+
+.faq-faq__question {
+  display: flex;
+  justify-content: left;
+  align-items: start;
+  width: 100%;
+  cursor: pointer;
+  padding: 24px 24px 24px 24px;
+}
+
+.faq-faq__questionLogo {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  color: #168352;
+  margin-right: 16px;
+}
+
+@media (min-width: 768px) {
+  .faq-faq__questionLogo {
+    margin-top: -5px;
+  }
+}
+
+.faq-faq__questionTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 8px;
+  width: 100%;
+}
+
+.faq-faq__questionCat {
+  display: flex;
+  column-gap: 8px;
+}
+
+.faq-faq__questionCatItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+  color: #168352;
+  width: 100px;
+  height: 24px;
+  border: 1px solid #168352;
+  border-radius: 4px;
+}
+
+
+.faq-faq__questionTxt {
+  display: flex;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.faq-faq__questionBtn {
+  display: flex;
+  width: 37px;
+  justify-content: center;
+  align-items: start;
+}
+
+.faq-faq__questionBtnMinus {
+  background-image: url("../image/faq/icon_minux_sp_01.png");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+}
+
+.faq-faq__questionBtnPlus {
+  background-image: url("../image/faq/icon_plus_sp_01.png");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+.faq-faq__arrowDown {
+  background-image: url("../image/faq-faq_caret_down_01.jpg");
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 9px;
+  position: absolute;
+  top: 28px;
+  right: 15px;
+}
+
+@media (min-width: 768px) {
+  .faq-faq__arrowDown {
+    top: 36px;
+    right: 22px;
+  }
+}
+
+.faq-faq__arrowUp {
+  background-image: url("../image/faq-faq_caret_up_01.jpg");
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 9px;
+  position: absolute;
+  top: 28px;
+  right: 15px;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .faq-faq__arrowUp {
+    top: 36px;
+    right: 22px;
+  }
+}
+
+.faq-faq__answer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: start;
+  border-radius: 0 0 8px 8px;
+  margin-top: -5px;
+  padding: 24px;
+}
+
+.faq-faq__answerText {
+  display: flex;
+  font-size: 16px;
+  margin-top: -24px;
 }
