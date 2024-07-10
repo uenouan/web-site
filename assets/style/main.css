@@ -454,7 +454,7 @@ Top
 
 @media (min-width: 768px) {
   .about__image {
-    width: 390px;
+    max-width: 390px;
     object-fit: cover;
   }
 }
@@ -482,7 +482,9 @@ Top
     row-gap: 25px;
     width: 50%;
     margin-left: unset;
-    padding: 100px 75px 0px 100px;
+    /* padding: 100px 75px 0px 100px; */
+    padding: 0 75px 0 100px;
+    justify-content: center;
   }
 }
 
@@ -717,6 +719,12 @@ Top
   }
 }
 
+@media (min-width: 768px) {
+  .products__itemName--pc {
+    display: flex;
+  }
+}
+
 
 /* Case
 ------------------------------------------ */
@@ -914,6 +922,7 @@ Price
   height: 37px;
   margin-bottom: 24px;
   vertical-align: top;
+  /* display: block; */
 }
 
 .price-section__heading:before {
@@ -969,7 +978,7 @@ Price
 
 .price-gallery__image {
   width: 100%;
-  height: 237px;
+  /* height: 237px; */
   /* object-fit: cover; */
   border-radius: 24px;
 }
